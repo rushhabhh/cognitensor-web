@@ -1,0 +1,2411 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(88.89deg, #FFFFFF 1.78%, #FCFCFC 1.79%, #F4FDFF 99.89%);
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.container-fluid {
+    padding: 2% 4% !important;
+}
+
+.company-logo {
+    height: 40px;
+}
+
+.navbar {
+    padding: 0 0 4.5rem;
+}
+
+.nav-item {
+    padding: 0 14px;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    font-family: 'Mulish', sans-serif;
+    color: #000000 !important;
+}
+
+nav ul li .underline-effect,
+nav ul li .underline-effect:after,
+nav ul li .underline-effect:before {
+    transition: all .5s;
+}
+
+.nav-link:hover {
+    color: #075678 !important;
+}
+
+nav.stroke ul li .underline-effect {
+    position: relative;
+}
+
+nav.stroke ul li .underline-effect:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #075678;
+    height: 3px;
+}
+
+nav.stroke ul li .underline-effect:hover:after {
+    width: 100%;
+}
+
+.navbar-toggler {
+    border: none !important;
+}
+
+.login-btn {
+    font-family: 'Chivo', sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    position: relative;
+    bottom: 4px;
+    background: #075678;
+    border: none;
+    color: #FFFFFF;
+    padding: 3px 14px;
+    border-radius: 3.5px;
+    transition: 0.5s;
+}
+
+.login-btn:hover {
+    color: #075678;
+    background-color: #bbffff;
+}
+
+/* Landing CSS start */
+
+.landing-para {
+    position: relative;
+    left: 2.5%;
+    margin-top: 70px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.65rem;
+    font-weight: 500;
+    line-height: 1.9;
+    color: #343434;
+    letter-spacing: 0.65px;
+}
+
+.main-landing {
+    height: 38vw;
+    position: relative;
+    bottom: 10%;
+    right: 1%;
+}
+
+.wod {
+    color: #0889ee;
+    font-weight: 600;
+}
+
+.woi {
+    color: #075678;
+    font-weight: 600;
+}
+
+.btn-title {
+    font-family: 'Roboto', sans-serif;
+    background: #075678;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 0.7rem 7rem;
+    border: 0;
+    transition: all 0.5s;
+    border-radius: 0 13px 13px 13px;
+    position: relative;
+    left: 2.5%;
+    margin: 10% 0;
+}
+
+.btn-title:hover {
+    font-weight: 600;
+    background: #004f98;
+    color: #FFFFFF;
+    border-radius: 0 13px 13px 13px;
+    padding: 1em 9em
+}
+
+.modal-body {
+    padding: 8% 8% 5% !important;
+}
+
+.form-control {
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 400 !important;
+    color: #b4b4b4 !important;
+    padding: 5.3% 0 5.3% 5% !important;
+    font-style: italic;
+}
+
+.btn {
+    margin-right: 190px !important;
+    padding: 8px 30px 8px 30px !important;
+    font-size: 1.125rem !important;
+    background-color: #075678 !important;
+    border: none !important;
+}
+
+.btn:hover {
+    background-color: #fcfcfc !important;
+    color: #075678 !important;
+    border: 1px solid #075678 !important;
+    font-weight: 500 !important;
+}
+
+#boost-algo {
+    background-color: #FFFFFF;
+    padding: 0 2% 6%;
+}
+
+.algo-head-5 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #b6b6b6;
+    letter-spacing: 0.8px;
+    padding-top: 5%;
+}
+
+.algo-head-2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #2c2b2b;
+    padding-top: 1.4%;
+    letter-spacing: 0.8px;
+}
+
+.card-layout {
+    padding: 5% 6% 0 7%;
+}
+
+.card-title {
+    margin-top: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+    letter-spacing: 0.8px;
+}
+
+.num-style {
+    color: #ffffff;
+    width: 22%;
+    height: 11.5%;
+    border-radius: 18px 0 0 0;
+    text-align: center;
+    position: relative;
+    right: 0.26%;
+    bottom: 0.46px;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.05em;
+    position: relative;
+    margin-top: 13px !important;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.accumulation-img {
+    height: 10.7vw;
+    margin-top: 50px;
+}
+
+.analyzation-img {
+    height: 10.5vw;
+    margin-top: 60px;
+}
+
+.prediction-img {
+    height: 9.2vw;
+    margin-top: 75px;
+    position: relative;
+    right: 3%;
+}
+
+.output-img {
+    height: 14vw;
+    margin-top: 18px;
+}
+
+#optics {
+    background-color: #003951;
+    padding: 5% 0 5% 0;
+}
+
+.landing-dot {
+    height: 7vw;
+    position: relative;
+    left: 93.5%;
+}
+
+.optics-landing {
+    height: 43vw;
+    position: relative;
+    right: 9.1%;
+}
+
+.optics-land-head {
+    color: #ffffff;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    margin-top: 70px;
+    margin-left: 5%;
+}
+
+.optics-land-para {
+    color: #ffffff;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.7;
+    margin-left: 5%;
+    margin-top: 20px;
+}
+
+.icon-placing {
+    position: relative;
+    margin-left: 6.5%;
+    margin-top: 50px;
+}
+
+.dricon {
+    height: 6vw;
+    cursor: pointer;
+}
+
+.mlicon {
+    height: 6vw;
+    position: relative;
+    left: 7.5%;
+    cursor: pointer;
+}
+
+.cvicon {
+    height: 6vw;
+    position: relative;
+    left: 15%;
+    cursor: pointer;
+}
+
+.learn-more {
+    color: #ffffff;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    margin-top: 1.5px;
+}
+
+.right-arrow {
+    margin-top: 10px;
+    position: relative;
+    left: 2%;
+    height: 2vw;
+}
+
+.flexing {
+    position: relative;
+    display: inline-flex;
+    margin-top: 60px;
+    left: 5%;
+}
+
+#ourproducts {
+    padding: 6% 5% 13%;
+    background-color: #ffffff;
+}
+
+.pimg {
+    height: 18vw;
+    filter: grayscale(100%);
+    transition: filter 0.5s;
+}
+
+.pimg:hover {
+    filter: grayscale(0);
+}
+
+.container-p {
+    padding-top: 5%;
+    position: absolute;
+}
+
+.pland-head {
+    color: #4b4b4b;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 2.3rem;
+}
+
+.container-p .content-p {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 57, 80, 0.75);
+    background: rgba(0, 57, 80, 0.75);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #f1f1f1;
+    width: 84.5%;
+    height: 100px;
+    padding: 20px;
+}
+
+.btn-1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    position: relative;
+    letter-spacing: 0.7px;
+    background: #075678;
+    border: none;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 13px;
+    left: 42.5%;
+    top: 80px;
+    margin-bottom: 40px;
+    transition: all 0.5s;
+}
+
+.btn-1:hover {
+    transform: scale(1.1);
+    background-color: #bbffff;
+    color: #075678;
+}
+
+#partners {
+    background-color: #003951;
+}
+
+.partner-dot {
+    height: 6vw;
+    position: relative;
+    bottom: 60px;
+}
+
+.carousel-partners {
+    padding: 1% 13% 5% !important;
+}
+
+.partner-head {
+    padding: 60px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 2.6rem;
+    letter-spacing: 0.8px;
+}
+
+.partner-img {
+    height: 20vw;
+    position: relative;
+    cursor: text;
+}
+
+/* Landing CSS end */
+
+/* About Us CSS start */
+
+.we-trio {
+    position: relative;
+    height: 32vw;
+    left: 8%;
+    bottom: 13%;
+}
+
+.about-head {
+    position: relative;
+    left: 2%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #4b4b4b;
+    top: 15%;
+}
+
+.about-para {
+    color: #FFFFFF;
+    position: relative;
+    left: 2.2%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.01rem;
+    font-weight: 700;
+    top: 22%;
+    line-height: 1.8em;
+}
+
+.about-box {
+    background-color: #2b99c8;
+    position: relative;
+    z-index: -1;
+    height: 240px;
+    /* bottom: 324px; */
+    margin-top: -324px;
+}
+
+#whatwedo {
+    position: relative;
+    padding: 8% 0 5%;
+}
+
+.right-dots-about {
+    height: 7vw;
+    position: relative;
+    left: 92.3%;
+}
+
+.whatwedo-img {
+    position: relative;
+    height: 22vw;
+    left: 5%;
+    bottom: 5%;
+}
+
+.whatwedo-head {
+    position: relative;
+    color: #4b4b4b;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+
+.whatwedo-para {
+    position: relative;
+    color: #4b4b4b;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.01rem;
+    top: 3%;
+    line-height: 1.7em;
+}
+
+#timeline {
+    background-color: #003951;
+}
+
+.timeline-head {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    padding: 4% 0 6%;
+}
+
+.timeline-img {
+    height: 85vw;
+    position: relative;
+    left: 18%;
+    padding-bottom: 10%;
+}
+
+.founders-head {
+    color: #4b4b4b;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 3% 0;
+}
+
+.founder-card {
+    height: 35vw;
+    transition: all 0.5s;
+}
+
+.founder-card1 {
+    height: 32vw;
+    margin-top: 42px;
+    transition: all 0.5s;
+} 
+
+.align-card {
+    margin-left: -40px;
+    margin-top: 2px;
+}
+
+.founder-card:hover, .founder-card1:hover {
+    transform: scale(1.1);
+}
+
+/* About Us end */
+
+/* Deep Optics CSS start */
+
+.deep-optics {
+    position: relative;
+    height: 52vw;
+    left: 26.03%;
+    bottom: 2%;
+}
+
+.deepoptics-head {
+    position: relative;
+    color: #4b4b4b;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.9rem;
+    font-size: 700;
+    top: 6%;
+    left: 2.5%;
+}
+
+.deepoptics-para {
+    position: relative;
+    color: #4b4b4b;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.01rem;
+    font-weight: 500;
+    top: 8%;
+    left: 2.5%;
+    line-height: 1.95;
+}
+
+#datarodeo {
+    position: relative;
+    padding-bottom: 6%;
+}
+
+.datarodeo-icon {
+    position: relative;
+    height: 4vw;
+    left: 5.5%;
+    cursor: text;
+}
+
+.right-dots-deepoptics {
+    position: relative;
+    height: 6vw;
+    left: 93.41%;
+    bottom: 20%;
+}
+
+#ml-bench {
+    background-color: #003951;
+    padding: 5% 0 6% 0;
+}
+
+.mlbench-icon {
+    position: relative;
+    height: 4vw;
+    left: 5.5%;
+    cursor: text;
+}
+
+.mlbench-head {
+    position: relative;
+    color: #FFFFFF;
+    left: 2.5%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 2.9rem;
+}
+
+.mlbench-para {
+    position: relative;
+    color: #ffffff;
+    left: 2.5%;
+    top: 8%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.01rem;
+    line-height: 1.95;
+}
+
+#cogniviz {
+    position: relative;
+    padding: 6% 0 8% 1.5%;
+}
+
+.head-icon {
+    display: flex;
+}
+
+.rodeo-gif {
+    position: relative;
+    width: 38vw;
+    top: 9%;
+    left: 4%;
+    cursor: pointer;
+}
+
+.mlbench-gif {
+    position: relative;
+    width: 40vw;
+    top: 8%;
+    left: 5%;
+    cursor: pointer;
+}
+
+.viz-gif {
+    position: relative;
+    width: 38vw;
+    top: 10%;
+    left: 4%;
+    cursor: pointer;
+}
+
+/* Deep Optics CSS end */
+
+/* Product CSS start */
+
+.left-dots {
+    height: 6vw;
+    position: relative;
+    top: 42px;
+
+}
+
+.product-landing {
+    position: relative;
+    height: 16vw;
+    margin-top: 45px;
+}
+
+.product-head {
+    position: relative;
+    left: 14%;
+    margin-top: 55px;
+    color: #4b4b4b;
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.product-para {
+    position: relative;
+    left: 14%;
+    margin-top: 15px;
+    color: #4b4b4b;
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    line-height: 1.6em;
+}
+
+#features {
+    padding: 16% 14% 9% 14%;
+}
+
+.product-img {
+    position: relative;
+    height: 10vw;
+    bottom: 1.5rem;
+}
+
+.feature-box {
+    text-align: center;
+    padding: 1% !important;
+    line-height: 1.2;
+}
+
+.para-info {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    letter-spacing: 0.4px;
+}
+
+#product-detail-1-4 {
+    padding: 2% 5% !important;
+}
+
+.description-head-1 {
+    margin-top: 55px;
+    position: relative;
+    color: #4b4b4b;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+
+.description-para-1 {
+    margin-top: 15px;
+    color: #4b4b4b;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.035rem;
+    position: relative;
+    line-height: 1.95;
+}
+
+.demand-forecasting {
+    margin-top: 90px;
+    position: relative;
+    height: 26vw;
+}
+
+#product-detail-2-3 {
+    position: relative;
+    background-color: #003951;
+    padding: 2% 4% 6%;
+    top: 80px;
+}
+
+.right-dots-product-upper {
+    position: relative;
+    height: 6vw;
+    top: 75px;
+    left: 97.18%;
+}
+
+.payment-analysis {
+    position: relative;
+    height: 24vw;
+    margin-top: 75px;
+    right: 8.9%;
+}
+
+.description-head-2 {
+    position: relative;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 2.8rem;
+    margin-top: 90px;
+}
+
+.description-para-2 {
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.01rem;
+    position: relative;
+    line-height: 1.95;
+    margin-top: 20px;
+}
+
+.planning-system {
+    position: relative;
+    height: 30vw;
+    margin-top: 60px;
+    left: 40.5%;
+}
+
+.description-head-3 {
+    position: relative;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 2.7rem;
+    margin-top: 150px;
+    left: 4%;
+}
+
+.description-para-3 {
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.01rem;
+    position: relative;
+    left: 4%;
+    margin-top: 20px;
+    line-height: 1.95;
+}
+
+.energy-analytics {
+    position: relative;
+    height: 28vw;
+    left: 10%;
+    bottom: 8%;
+}
+
+.description-head-4 {
+    margin-top: 20px;
+    position: relative;
+    color: #4b4b4b;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 2.8rem;
+    
+}
+
+.description-para-4 {
+    margin-top: 15px;
+    color: #4b4b4b;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.01rem;
+    position: relative;
+    line-height: 1.95;
+}
+
+.right-dots-product-lower {
+    height: 6vw;
+    position: relative;
+    left: 98.2%;
+    top: 100px;
+}
+
+/* Product CSS end */
+
+/* Hiring CSS start */
+
+.joinus {
+    color: #075678;
+}
+
+.hiring-head {
+    position: relative;
+    left: 2%;
+    margin-top: 6%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    color: #4b4b4b;
+}
+
+.yellow-line {
+    position: relative;
+    border: solid #F8CC3E 4px;
+    border-bottom: none;
+    width: 19%;
+    bottom: 1%;
+    right: 37.9%;
+}
+
+.hiring-para {
+    position: relative;
+    left: 2%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.7rem;
+    color: #4b4b4b;
+}
+
+.hiring-landing {
+    position: relative;
+    height: 35vw;
+    bottom: 14.5%;
+    left: 3.63%;
+}
+
+.arrow {
+    height: 10vw;
+    position: relative;
+    left: 1.75%;
+}
+
+.scroll {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    position: relative;
+    letter-spacing: 0.5;
+    left: 6%;
+    bottom: 34px;
+    color: #4b4b4b;
+}
+
+#testimonial {
+    position: relative;
+    background-color: #003951;
+    bottom: 40px;
+}
+
+.carousel-inner {
+    padding: 6% 6%;
+}
+
+.emp-img {
+    height: 27vw;
+    margin-bottom: 10px;
+}
+
+.emp-para {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    position: relative;
+    margin-top: 70px;
+    margin-left: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.8px;
+}
+
+.emp-role {
+    color: #ffffff;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    top: 35px;
+    letter-spacing: 0.8px;
+    margin-left: 20px;
+}
+
+#positions {
+    padding: 0 20%;
+}
+
+.job-role {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-top: 50px;
+    top: 6px;
+    width: 95%;
+}
+
+.open-position {
+    color: #075678;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 2.9rem;
+}
+
+hr {
+    width: 95%;
+    position: relative;
+    right: 18px;
+}
+
+.position-btn {
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.125rem;
+    padding: 7px 30px;
+    background: #075678;
+    color: #FFFFFF;
+    transition: 0.5s;
+}
+
+.position-btn:hover {
+    color: #075678;
+    background-color: #bbffff;
+    border: none;
+    transform: scale(1.1);
+}
+
+#innovation {
+    position: relative;
+    margin-top: 80px;
+    background-color: #003951;
+    padding: 5% 5%;
+}
+
+.joining-para {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 2.25rem;
+    color: #ffffff;
+    position: relative;
+    margin-top: 100px;
+    letter-spacing: 0.8px;
+}
+
+.join-ct {
+    color: #F8CC3E;
+}
+
+.hiring-dot {
+    height: 6vw;
+    position: relative;
+    right: 5.55%
+}
+
+.join-cognitensor {
+    position: relative;
+    height: 26vw;
+    margin-top: 25px;
+}
+
+/* Hiring CSS end */
+
+/* Contact Us start */
+
+.contact-head {
+    position: relative;
+    margin-top: 35px;
+    left: 2.5%;
+    color: #4b4b4b;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 3.2rem;
+    letter-spacing: 0.5px;
+}
+
+.contact-para {
+    position: relative;
+    top: 2%;
+    left: 2.5%;
+    color: #4b4b4b;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.7rem;
+    line-height: 1.6em;
+}
+
+.contact-landing {
+    position: relative;
+    height: 26vw;
+    bottom: 10%;
+    left: 10%;
+}
+
+.kickstart {
+    padding: 5% 2% 0 5%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    letter-spacing: 0.7px;
+    color: #075678;
+}
+
+#contact-info {
+    padding: 5% 7% 0 7%;
+}
+
+.container-contact {
+    padding: 4% 3%;
+}
+
+.contact-column {
+    text-align: center;
+}
+
+.contact-icon {
+    height: 3vw;
+}
+
+.card {
+    border: 1px solid #ffffff !important;
+    box-shadow: 4px 7px 7px rgba(0, 0, 0, 0.18);
+    transition: all 0.7s;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.info-para {
+    font-family: 'Sen', sans-serif;
+    font-weight: 700;
+    color: #3b4862;
+    letter-spacing: 0.5px;
+}
+
+#contact-form {
+    padding: 2% 4%;
+}
+
+.contact-map {
+    position: relative;
+    height: 37vw;
+    bottom: 3%;
+    left: 14%;
+}
+
+.container-input {
+    position: relative;
+    line-height: 1.6;
+    left: 1%;
+    bottom: 3px;
+}
+
+.contact-form-box {
+    width: 85%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #6B6B6B;
+    border: 1px solid #fcfcfc;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.send-btn {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    top: 7px;
+    background: #075678;
+    border: none;
+    color: #FFFFFF;
+    padding: 6px 30px;
+    border-radius: 3.5px;
+}
+
+.send-btn:hover {
+    border: 1px solid #075678;
+    color: #075678;
+    background: #FFFFFF;
+    transition: 0.5s;
+}
+
+/* Contact Us end */
+
+/* Footer start */
+
+footer {
+    margin-top: 100px;
+    background-image: url(static/images/.footer-building.svg);
+}
+
+.footer-link {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: #000000 !important;
+}
+
+.footer-item {
+    font-family: 'Chivo', sans-serif;
+    font-size: 1.1rem;
+    color: #000000 !important;
+}
+
+.help-para {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+}
+
+.submit-value {
+    background-color: #34B8C7;
+    border: none;
+    color: #ffffff;
+    padding: 3.5px 17px;
+    margin-left: -5px;
+    transition: all 0.5s;
+}
+
+.submit-value:hover {
+    background-color: #f1f1f1;
+    border: none;
+    color: #34B8C7;
+}
+
+.footer-text {
+    position: relative;
+    top: 10px;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+/* Footer end */
+
+/* Privacy Policy & Terms - Condition start */
+
+.container-fluid2 {
+    padding: 1% 5% !important;
+}
+
+.bold-para {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.normal-para {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+/* Privacy Policy & Terms - Condition end */
+
+
+/* Responsive Mobile start */
+
+@media only screen and (max-width:600px) {
+    .navbar-nav {
+        margin-top: 25px;
+    }
+
+    .nav-item {
+        text-align: center;
+    }
+
+    .company-logo {
+        height: 40px;
+    }
+
+    /* Landing Page Responsive start */
+
+    .landing-para {
+        left: 12px;
+        bottom: 25px;
+        font-size: 1rem;
+    }
+
+    .btn-title {
+        border-radius: 0 13px 13px 13px;
+        padding: 0.5rem 5rem;
+        font-size: 0.8rem;
+        left: 12px;
+        bottom: 40px;
+    }
+
+    .main-landing {
+        left: 25px;
+        height: 260px;
+        bottom: 40px;
+    }
+
+    .algo-head-5 {
+        font-size: 0.9rem;
+    }
+
+    .algo-head-2 {
+        font-size: 1.4rem;
+    }
+
+    .card-resp {
+        left: 25px;
+        height: 28rem !important;
+        margin-bottom: 25px;
+    }
+
+    .accumulation-img {
+        height: 150px;
+    }
+
+    .analyzation-img {
+        height: 140px;
+    }
+
+    .prediction-img {
+        height: 135px;
+    }
+
+    .output-img {
+        height: 180px;
+    }
+
+    #optics {
+        padding-bottom: 2%;
+    }
+
+    .landing-dot {
+        height: 25px;
+        top: 20px
+    }
+
+    .optics-landing {
+        height: 330px;
+    }
+
+    .optics-land-head {
+        font-size: 2.2rem;
+        bottom: 20px;
+        text-align: center;
+    }
+
+    .optics-land-para {
+        font-size: 1rem;
+        text-align: center;
+        bottom: 15px;
+    }
+
+    .dricon {
+        bottom: 125px;
+    }
+
+    .dricon, .mlicon, .cvicon {
+        height: 60px;
+        padding-left: 18px;
+    }
+
+    .learn-more {
+        bottom: 24px;
+        margin-left: 100px;
+        font-size: 0.9rem;
+        letter-spacing: 0;
+    }
+
+    .right-arrow {
+        bottom: 21px;
+        height: 18px;
+    }
+
+    .pland-head {
+        font-size: 2.3rem;
+        letter-spacing: 0.6px;
+        padding-top: 5%;
+    }
+
+    .pimg {
+        margin-left: 80px;
+        margin-top: 5px;
+        height: 151px;
+    }
+
+    .para-p {
+        font-size: 0.75rem;
+    }
+
+    .container-p .content-p {
+        height: 43%;
+        width: 45.1%;
+        margin-left: 80px;
+    }
+
+    .btn-1 {
+        right: 43px;
+        padding: 3px 12px;
+        font-size: 0.9rem;
+        top: 30px;
+        margin-bottom: 50px;
+    }
+
+    .partner-head {
+        font-size: 1.3rem;
+    }
+
+    .partner-dot {
+        height: 35px;
+    }
+
+    .carousel-item {
+        left: 25%;
+    }
+
+    .carousel {
+        bottom: 50px;
+    }
+    
+    .partner-img {
+        height: 130px;
+        margin-bottom: 15px;
+    }
+
+    /* Landing Page Responsive end */
+
+    /* About Us Responsive start */
+
+    .about-head, .whatwedo-head, .timeline-head {
+        font-size: 2rem;
+    }
+
+    .whatwedo-resp {
+        margin-left: 3%;
+    }
+
+    .about-para, .whatwedo-para {
+        font-size: 0.7rem;
+    }
+
+    .about-box {
+        height: 170px;
+        top: 183px;
+    }
+
+    .we-trio {
+        display: none;
+    }
+
+    #whatwedo {
+        margin-top: 180px;
+    }
+
+    .right-dots-about {
+        height: 26px;
+    }
+
+    .whatwedo-img {
+        height: 170px;
+        margin-bottom: 10px;
+    }
+
+    .timeline-img {
+        height: 380px;
+        margin-left: -8%;
+    }
+
+    .founder-resp {
+        padding-left: 90px !important;
+    }
+
+    .founder-card {
+        height: 300px;
+    }
+
+    .founder-card-resp1 {
+        height: 310px;
+    }
+
+    .founder-card1 {
+        height: 300px;
+        margin-top: -1px;
+        margin-left: -35px;
+    }
+
+    /* About Us Responsive end */
+
+    /* DeepOptics Responsive start */
+
+    .deepoptics-head {
+        font-size: 1.8rem;
+    }
+
+    .deepoptics-para {
+        letter-spacing: 0;
+        font-size: 0.8rem;
+        text-align: left;
+    }
+
+    .deep-optics {
+        height: 330px;
+        top: 20px;
+        margin-left: 24.6px;
+        margin-right: 0%;
+    }
+
+    .right-dots-deepoptics {
+        height: 22px;
+    }
+
+    .rodeo-gif, .mlbench-gif, .viz-gif {
+        height: 190px;
+        width: 310px;
+    }
+
+    .deepoptics-head, .mlbench-head {
+        margin-top: 40px;
+        font-size: 1.8rem;
+    }
+
+    .datarodeo-para, .mlbench-para {
+        margin-top: 10px;
+        letter-spacing: 0;
+        font-size: 0.8rem;
+        top: -1px;
+        text-align: left;
+    }
+
+    .cogniviz-para {
+        margin-top: -12px;
+    }
+
+    .datarodeo-icon {
+        height: 40px;
+        margin-top: 30px;
+    }
+
+    #ml-bench {
+        padding-bottom: 13%;
+    }
+
+    /* DeepOptics Responsive end */
+
+    /* Products Responsive start */
+
+    .left-dots {
+        height: 30px;
+        top: 0px;
+    }
+
+    .product-landing {
+        height: 120px;
+        margin-left: 10px;
+    }
+
+    .product-head {
+        font-size: 1.9rem;
+        left: 20px;
+    }
+
+    .product-para {
+        font-size: 1.1rem;
+        left: 20px;
+    }
+
+    .product-img {
+        height: 95px;
+        padding: 4px;
+    }
+
+    .para-info {
+        font-size: 1rem;
+        margin-top: -25px;
+        padding-bottom: 22px;
+    }
+
+    .description-head-1, .description-head-2, .description-head-3, .description-head-4 {
+        font-size: 1.8rem;
+    }
+
+    .description-para-1, .description-para-2, .description-para-3, .description-para-4 {
+        font-size: 0.8rem;
+    }
+
+    .right-dots-product-upper {
+        height: 22px;
+    }
+
+    .right-dots-product-lower {
+        height: 22px;
+    }
+
+    .demand-forecasting {
+        height: 200px;
+        top: 20px;
+        left: 25px;
+    }
+
+    .payment-analysis {
+        height: 180px;
+        right: 14px;
+    }
+
+    .planning-system {
+        height: 250px;
+        margin-top: -55px;
+        margin-left: -23px;
+    }
+
+    .energy-analytics {
+        height: 250px;
+        top: 10px;
+    }
+
+    .pas-resp {
+        top: -30px;
+    }
+
+    .pps-resp {
+        top: -80px;
+        left: -1px;
+    }
+
+    .ea-resp {
+        bottom: 20px;
+    }
+
+    /* Products Responsive end */
+
+    /* Hiring Responsive start */
+
+    .left-dots {
+        height: 35px;
+    }
+
+    .hiring-head {
+        font-size: 1.8rem;
+    }
+
+    .yellow-line {
+        margin-right: 110px;
+        top: -8px;
+    }
+
+    .hiring-para {
+        font-size: 1.29rem;
+    }
+
+    .arrow {
+        height: 80px;
+    }
+
+    .scroll {
+        font-size: 0.7rem;
+        top: -25px;
+    }
+
+    .hiring-landing {
+        height: 220px;
+        margin-left: 34px;
+    }
+
+    #testimonial {
+        padding: 20% 0 0 0;
+        margin-top: -5px;
+    }
+
+    .emp-img {
+        height: 190px;
+        margin-left: -20px;
+    }
+
+    .emp-para {
+        font-size: 1rem;
+        left: -92px;
+        top: -30px;
+    }
+
+    .emp-role {
+        font-size: 0.75rem;
+        left: -92px;
+        top: -20px;
+    }
+
+    .open-position {
+        font-size: 1.9rem;
+        text-align: center;
+    }
+
+    .position-head {
+        font-size: 1rem;
+    }
+
+    .position-btn {
+        padding: 5px 15px;
+        font-size: 0.7rem;
+    }
+
+    .joining-para {
+        font-size: 1.6rem;
+        top: -50px;
+        text-align: center;
+    }
+
+    .join-cognitensor {
+        height: 190px;
+        top: -45px;
+        margin-left: 12px;
+    }
+
+    .hiring-dot {
+        height: 30px;
+    }
+
+    /* Hiring Responsive end */
+
+    /* Contact Us Responsive start */
+
+    .left-dots {
+        height: 30px;
+    }
+
+    .contact-head {
+        padding: 0 2% !important;
+        font-size: 2rem;
+        padding: 0 2%;
+    }
+
+    .contact-para {
+        padding: 0 2% !important;
+        font-size: 1rem;
+        padding: 0 2%;
+    }
+
+    .contact-landing {
+        padding: 0 2% !important;
+        height: 180px;
+        margin-top: 50px;
+        margin-left: 23px;
+    }
+
+    .kickstart {
+        padding: 5% 6% !important;
+        font-size: 1.5rem;
+    }
+
+    #contact-info {
+        padding: 0 6% !important;
+    }
+
+    .contact-icon {
+        height: 40px;
+    }
+
+    .info-para {
+        font-size: 0.9rem;
+    }
+
+    #contact-form {
+        padding: 0 5%;
+    }
+
+    .contact-map {
+        margin-top: 25px;
+        margin-left: 15px;
+        height: 260px;
+        width: auto;
+    }
+
+    .container-input {
+        margin-top: 20px;
+    }
+
+    .contact-form-box {
+        width: 96%;
+        font-size: 0.7rem;
+    }
+
+    .send-btn {
+        padding: 4px 18px;
+        font-size: 0.75rem;
+    }
+
+    /* Contact Us Responsive end */
+
+    /* Footer start */
+     .footer {
+         margin-top: -20px;
+
+     }
+    .footer-link {
+        font-size: 17px;
+
+
+    }
+    .footer-item {
+        font-size: 14px;
+
+    }
+    .submit-value {
+        margin-top: 10px;
+    }
+
+
+    /* Footer end */
+}
+
+/* Responsive Mobile end */
+
+/* Tablet Responsive start */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait)  
+and (-webkit-min-device-pixel-ratio: 2)
+{
+    /* Landing Page start */
+
+    .company-logo {
+        height: 48px;
+    }
+
+    .navbar-nav {
+        margin-top: 40px;
+    }
+
+    .nav-item {
+        text-align: center;
+    }
+
+    .landing-para {
+        font-size: 1.2rem;
+        bottom: 20px;
+    }
+
+    .btn-title {
+        border-radius: 0 15px 15px 15px;
+        padding: 0.5rem 5rem;
+        bottom: 25px;
+    }
+
+    .main-landing {
+        top: 10px;
+    }
+
+    .card-resp {
+        left: 25px;
+    }
+
+    .accumulation-img {
+        height: 150px;
+    }
+
+    .analyzation-img {
+        height: 140px;
+    }
+
+    .prediction-img {
+        height: 135px;
+    }
+
+    .output-img {
+        height: 180px;
+    }
+
+    .optics-landing {
+        height: 400px;
+    }
+
+    .optics-land-head {
+        font-size: 2.5rem;
+        bottom: 20px;
+    }
+
+    .optics-land-para {
+        font-size: 1rem;
+        bottom: 15px;
+    }
+
+    .dricon, .mlicon, .cvicon {
+        height: 60px;
+        padding-left: 16px;
+    }
+
+    .learn-more {
+        bottom: 24px;
+        font-size: 1rem;
+        letter-spacing: 0;
+    }
+
+    .right-arrow {
+        bottom: 19px;
+        height: 19px;
+    }
+
+    .pimg {
+        margin-left: 90px;
+        margin-top: 5px;
+        height: 160px;
+    }
+
+    .para-p {
+        font-size: 0.8rem;
+    }
+
+    .container-p .content-p {
+        height: 43%;
+        width: 47.5%;
+        margin-left: 90px;
+    }
+
+    /* Landing Page end */
+
+    /* About Us start */
+
+    .about-head, .whatwedo-head, .timeline-head {
+        font-size: 2.5rem;
+    }
+
+    .about-para, .whatwedo-para {
+        font-size: 0.8rem;
+    } 
+
+    .about-box {
+        height: 210px;
+        top: 140px;
+    }
+
+    .we-trio {
+        height: 280px;
+        top: 42px;
+    }
+
+    #whatwedo {
+        margin-top: 120px;
+    }
+
+    .whatwedo-img {
+        margin-top: 75px;
+        height: 180px;
+    }
+
+    .align-card {
+        margin-left: -30px;
+    }
+
+    .founder-card1 {
+        margin-top: 27px;
+    }
+
+    /* About Us end */
+
+    /* Deep Optics start */
+
+    .deepoptics-head {
+        font-size: 1.9rem;
+    }
+
+    .mlbench-head {
+        font-size: 1.9rem;
+        margin-top: 20px;
+    }
+
+    .ml-resp {
+        top: 5px;
+    }
+
+    .deepoptics-para, .mlbench-para {
+        font-size: 0.8rem;
+    }
+
+    .deep-optics {
+        top: 30px;
+        margin-left: 6px;
+    }
+
+    .datarodeo-icon {
+        height: 45px;
+    }
+
+    .dr-resp {
+        bottom: 12px;
+    }
+
+    .datarodeo-para, .mlbench-para, .cogniviz-para{
+        top: 15px;
+    }
+
+    .rodeo-gif, .mlbench-gif, .viz-gif {
+        height: 200px;
+        width: 320px;
+        margin-top: 50px;
+    }
+
+    /* Deep Optics end */
+
+    /* Products start */
+
+    .product-landing {
+        top: 20px;
+    }
+
+    .product-head {
+        font-size: 1.9rem;
+    }
+
+    .product-para {
+        font-size: 1rem;
+    }
+
+    .product-img {
+        height: 100px;
+    }
+
+    .para-info {
+        margin-top: -15px;
+        font-size: 1rem;
+    }
+
+    .sp-resp {
+        margin-top: 10px;
+    }
+
+    .description-head-1, .description-head-2, .description-head-3, .description-head-4 {
+        font-size: 1.8rem;
+    }
+
+    .description-para-1, .description-para-2, .description-para-3, .description-para-4 {
+        font-size: 0.8rem;
+    }
+
+    .energy-analytics {
+        top: 15px;
+    }
+
+    .payment-analysis {
+        top: 55px;
+    }
+
+    .planning-system {
+        margin-left: -2px;
+        top: 35px;
+    }
+
+    .demand-forecasting {
+        top: 40px;
+    }
+
+    .pps-resp {
+        bottom: 50px !important;
+    }
+
+    /* Products end */
+
+    /* Hiring start */
+
+    .hiring-head {
+        font-size: 2rem;
+        top: 12px;
+    }
+
+    .yellow-line {
+        top: 5px;
+        width: 70px;
+        margin-right: 114px;
+    }
+
+    .hiring-para {
+        font-size: 1.3rem;
+    }
+
+    .arrow {
+        height: 80px;
+    }
+
+    .scroll {
+        font-size: 1rem;
+    }
+
+    .hiring-landing {
+        top: 12px;
+    }
+
+    .emp-para {
+        font-size: 1rem;
+        bottom: 30px;
+    }
+
+    .emp-role {
+        font-size: 0.8rem;
+        top: -20px;
+    }
+
+    .open-position{
+        font-size: 2.2rem;
+    }
+
+    .position-head {
+        font-size: 1.4rem;
+    }
+
+    .position-btn {
+        font-size: 1rem;
+    }
+
+    .joining-para {
+        font-size: 1.3rem;
+    }
+
+    .join-cognitensor {
+        top: 10px;
+    }
+
+    /* Hiring end */
+
+    /* Contact Us start */
+
+    .contact-head {
+        font-size: 2.5rem;
+    }
+
+    .contact-para {
+        font-size: 1.1rem;
+    }
+
+    .contact-landing {
+        margin-top: 20px;
+    }
+
+    .kickstart {
+        margin-top: 10px;
+        font-size: 2rem;
+    }
+
+    .contact-map {
+        margin-top: 20px;
+        height: 400px;
+        margin-left: 65px;
+    }
+
+    .container-input {
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .contact-form-box {
+        width: 80%;
+    }
+
+    /* Contact Us end */
+
+    /* Footer start */
+
+    footer {
+        margin-top: -150px;
+    }
+
+    .footer-display {
+        margin-left: -10px;
+    }
+
+    .footer-link {
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+
+    .help-you {
+        font-size: 1rem;
+        margin-top: 15px;
+    }
+
+    .submit-value {
+        margin-top: 10px;
+        margin-left: 1px;
+    }
+
+    .footer-item {
+        font-size: 0.6rem;
+        top: -40px;
+    }
+
+    .footer-cogni {
+        margin-top: 20px;
+    }
+
+    .social-media {
+        left: 70px;
+        top: 370px;
+    }
+
+    /* Footer end */
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape)  
+and (-webkit-min-device-pixel-ratio: 2) {
+
+    .nav-item {
+        padding: 0 8px;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+        font-family: 'Mulish', sans-serif;
+        color: #000000 !important;
+    }
+
+    .landing-para {
+        font-size: 1.4rem;
+    }
+
+    .main-landing {
+        margin-top: 10px;
+    }
+
+    #boost-algo {
+        padding: 0;
+    }
+
+    .card-resp {
+        margin-left: -25px;
+    }
+
+    .right-arrow {
+        top: 5px;
+    }
+
+    .we-trio {
+        top: 55px;
+    }
+
+    .about-box {
+       margin-top: -205px;
+    }
+
+    .whatwedo-img {
+        top: 50px;
+    }
+
+    .founder-card1 {
+        margin-top: 30px;
+    }
+
+    .rodeo-gif, .mlbench-gif, .viz-gif {
+        height: 250px;
+        margin-top: 75px;
+    }
+
+    .description-head-1, .description-head-2, .description-head-3, .description-head-4 {
+        font-size: 1.8rem;
+    }
+
+    .energy-analytics {
+        margin-top: 60px;
+        margin-left: 50px;
+    }
+
+    .payment-analysis {
+        margin-top: 150px;
+    }
+
+    .planning-system {
+        margin-top: 150px;
+    }
+
+    .demand-forecasting {
+        margin-top: 120px;
+    }
+
+    .para-info {
+        font-size: 1.05rem;
+    }
+
+    .height-resp {
+        height: 150px;
+    }
+
+    .hiring-head {
+        font-size: 2.4rem;
+    }
+
+    .hiring-landing {
+        top: 1px;
+        margin-left: 5px;
+    }
+
+    .arrow {
+        height: 110px;
+    }
+
+    .emp-para {
+        font-size: 1.3rem;
+        margin-top: 5px;
+    }
+
+    .emp-role {
+        font-size: 1rem;
+    }
+
+    .contact-para {
+        font-size: 1.5rem;
+    }
+
+    .contact-landing {
+        margin-top: 10px;
+    }
+
+    .kickstart {
+        font-size: 1.8rem;
+    }
+
+    .info-para {
+        font-size: 0.75rem;
+    }
+
+    .contact-map {
+        margin-top: 30px;
+    }
+
+    .footer-link {
+        margin-top: 40px;
+        font-size: 1rem;
+        padding: 16px;
+    }
+
+    .footer-item {
+        font-size: 1rem;
+        top: -15px;
+    }
+
+    .footer-input-mail {
+        width: 90%;
+    }
+
+    .submit-value {
+        margin-top: 10px;
+        margin-left: 1px;
+    }
+
+    .help-you {
+        font-size: 1.3rem;
+        margin-top: 55px;
+    }
+
+    .social-media {
+        top: 476px;
+        left: 75px;
+    }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) 
+and (-webkit-min-device-pixel-ratio: 2) {
+
+    .nav-item {
+        padding: 0 8px;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+        font-family: 'Mulish', sans-serif;
+        color: #000000 !important;
+    }
+
+    .card-resp {
+        margin-left: -50px;
+    }
+
+    .pimg {
+        margin-left: -1px;
+    }
+
+    .content-p {
+        margin-left: -1px !important;
+    }
+
+    .container-p .content-p {
+        width: 72%;
+    }
+
+    .about-box {
+        margin-top: -340px !important;
+    }
+
+    .we-trio {
+        top: 31px;
+    }
+
+    .whatwedo-img {
+        top: -60px;
+        height: 220px;
+    }
+
+    .arrow {
+        height: 120px;
+    }
+
+    .hiring-landing {
+        top: -10px;
+        margin-left: 4px;
+    }
+
+    .yellow-line {
+        width: 30%;
+    }
+
+    .emp-para {
+        font-size: 1.2rem;
+    }
+
+    .emp-role {
+        font-size: 1rem;
+    }
+
+    .info-para {
+        font-size: 0.75rem;
+    }
+
+    .footer-link {
+        font-size: 1.2rem;
+        padding: 15px;
+    }
+
+    .help-you {
+        font-size: 1.4rem;
+        padding-top: 4px;
+    }
+
+    .footer-item {
+        font-size: 1.2rem;
+    }
+
+    .footer-input-mail {
+        width: 90%;
+    }
+
+    .social-media {
+        top: 450px;
+        left: 110px;
+    }
+}

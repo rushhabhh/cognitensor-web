@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="static/css/styles.css">
+
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <!-- Favicon -->
+    <link rel="icon" href="static/images/tab-icon.png" type="image/png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Animated CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chivo&family=Libre+Franklin:wght@600&family=Mulish:wght@600;700&family=Open+Sans:wght@600&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <title>Products</title>
+</head>
+
+<body>
+
+    <!-- WoW JS Animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+
+    <!-- Bootstrap JS  -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+
+    <!-- Product Title -->
+    <section id="product-title">
+        <div class="container-fluid">
+            {% with messages=get_flashed_messages() %}
+            {% if messages %}
+            {% for message in messages %}
+            <div class="alert alert-success alert-dismissable" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="close">
+                    <span aria-hidden="true">x</span>
+                </button>
+                 {{message}}
+             </div>
+                {% endfor %}
+                {% endif %}
+                {% endwith %}
+            <nav class="wow fadeInDown navbar navbar-expand-lg navbar-light stroke">
+                <a href="/" class="navbar-brand"><img class="company-logo" src="static/images/company-logo.svg"
+                        alt="CogniTensor Logo"></a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a href="/about" class="nav-link underline-effect">About</a></li>
+                        <li class="nav-item"><a href="/deepoptics" class="nav-link underline-effect">Deep Optics</a></li>
+                        <li class="nav-item"><a href="/products" class="nav-link underline-effect">Products</a></li>
+                        <li class="nav-item"><a href="/blogs" class="nav-link underline-effect">Blogs</a></li>
+                        <li class="nav-item"><a href="/hiring" class="nav-link underline-effect">Hiring</a></li>
+                        <li class="nav-item"><a href="/contactus" class="nav-link underline-effect">Contact Us</a></li>
+                        <li class="nav-item"><a href="https://console.cognitensor.com/login" class="nav-link"><button
+                                    type="button" class="login-btn">Login</button></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <img class="left-dots" src="static/images/left-dots.svg" alt="Left Circle Design">
+
+        <div class="row container-fluid">
+            <div class="col-lg-6 col-md-6">
+                <img class="product-landing" 
+                    src="static/images/product-images/product-landing.svg" alt="Product Landing">
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <h1 class="wow fadeInUp product-head" data-wow-delay="1s">Products</h1>
+                <p class="wow fadeInUp product-para" data-wow-delay="1.2s">AI Powered Integrated Analytics Solutions
+                    Enabaling Real Time Demand
+                    Management</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Product Introduction -->
+
+    <section id="features">
+        <div class="row container-product">
+            <div class="col-lg-3 col-md-6 feature-box">
+                <img class="wow fadeInUp product-img" data-wow-delay="1s"
+                    src="static/images/product-images/product-4.svg" alt="Product-4">
+                <p class="wow fadeInUp para-info" data-wow-delay="1.2s">Energy & Commodity <br> Price Prediction</p>
+            </div>
+            <!-- <div class="col-lg-3 col-md-6 feature-box">
+                <img class="wow fadeInUp product-img" data-wow-delay="1s"
+                    src="static/images/product-images/product-1.svg" alt="Product-1">
+                <p class="wow fadeInUp para-info" data-wow-delay="1.4s">Demand Forecasting <br> & Replenishment</p>
+            </div> -->
+            <div class="col-lg-3 col-md-6 feature-box">
+                <img class="wow fadeInUp product-img" data-wow-delay="1s"
+                    src="static/images/product-images/product-2.svg" alt="Product-2">
+                <p class="wow fadeInUp para-info" data-wow-delay="1.2s">Payment Analytics <br> System</p>
+            </div>
+            <div class="col-lg-3 col-md-6 feature-box sp-resp">
+                <img class="wow fadeInUp product-img" data-wow-delay="1s"
+                    src="static/images/product-images/product-3.svg" alt="Product-3">
+                <p class="wow fadeInUp para-info" data-wow-delay="1.2s">Procurement Planning <br> System</p>
+            </div>
+            <div class="col-lg-3 col-md-6 feature-box sp-resp">
+                <img class="wow fadeInUp product-img" data-wow-delay="1s"
+                    src="static/images/product-images/product-1.svg" alt="Product-1">
+                <p class="wow fadeInUp para-info" data-wow-delay="1.2s">Demand Forecasting <br> & Replenishment</p>
+            </div>
+            <!-- <div class="col-lg-3 col-md-6 feature-box sp-resp">
+                <img class="wow fadeInUp product-img" data-wow-delay="1s"
+                    src="static/images/product-images/product-4.svg" alt="Product-4">
+                <p class="wow fadeInUp para-info" data-wow-delay="1.4s">Energy & Commodity <br> Price Prediction</p>
+            </div> -->
+        </div>
+    </section>
+
+    <section id="product-detail-1-4">
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <h1 class="wow fadeInUp description-head-4 ea-resp" data-wow-delay="1s">Energy & Commodity <br> Price
+                    Prediction</h1>
+                <p class="wow fadeInUp description-para-4 ea-resp" data-wow-delay="1.2s"><strong>Value Proposition -
+                    </strong>Optimizing Energy Portfolio
+                    Management.<br>
+                    <strong>Features - </strong>Detects peak prices and suggests when to buy optimally, leverages
+                    price differences between markets and attributes optimally to minimize risk exposure.<br>
+                    <strong>Business Benefits - </strong>Determine expected load on any given day/month thereby
+                    optimizing buy/sell decision/portfolio management.
+                </p>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <img class="energy-analytics"
+                    src="static/images/product-images/energy-analytics.svg" alt="Energy Analytics">
+            </div>
+        </div>
+    </section>
+
+    <section id="product-detail-2-3">
+        <img class="right-dots-product-upper" src="static/images/right-dots.svg" alt="Right Circle Design">
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <img class="payment-analysis"
+                    src="static/images/product-images/payment-analysis.svg" alt="Payment Analysis System">
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <h1 class="wow fadeInUp description-head-2 pas-resp" data-wow-delay="1s">Payment Analysis System</h1>
+                <p class="wow fadeInUp description-para-2 pas-resp" data-wow-delay="1.2s"><strong>Value Proposition -
+                    </strong>Improved cash flow
+                    management. <br>
+                    <strong>Features - </strong>It ensures smart cash flow management, quicker realisation of payments.
+                    Provides
+                    personalized recommendations to deal with late payments. Does Payment analysis, Payment
+                    ageging analysis, invoice tracking and collection analysis. <br>
+                    <strong>Business Benefits - </strong>PAS ensures smart cash flow management. It contributes towards
+                    quicker
+                    realization of payments.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <h1 class="wow fadeInUp description-head-3 pps-resp" data-wow-delay="1s">Procurement Planning System
+                </h1>
+                <p class="wow fadeInUp description-para-3 pps-resp" data-wow-delay="1.2s"><strong>Value Proposition -
+                    </strong>Optimized supplier
+                    management. <br>
+                    <strong>Features - </strong>The system provides comprehensive information on suppliers evaluation,
+                    material
+                    quality and delivery analytics. It provides smart recommendations for the choice of
+                    suppliers for future purposes based on quality and performance of the supplier. <br>
+                    <strong>Business Benefits - </strong>PPS provides critical insights in terms of KPIs for data-driven
+                    decisions. It ensures improves procurement planning and quality/cost ratio.
+                </p>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <img class="planning-system"
+                    src="static/images/product-images/planning-system.svg" alt="Procurement Planning System">
+            </div>
+        </div>
+    </section>
+    <br><br>
+
+    <section id="product-detail-1-4">
+        <img class="right-dots-product-lower" data-wow-delay="1s" src="static/images/right-dots.svg"
+            alt="Right Circle Design">
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <img class="demand-forecasting"
+                    src="static/images/product-images/demand-forecasting.svg" alt="Demand Forecasting & Replenishment">
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <h1 class="wow fadeInUp description-head-1" data-wow-delay="1s">Demand Forecasting & <br> Replenishment
+                </h1>
+                <p class="wow fadeInUp description-para-1" data-wow-delay="1.2s"><strong>Value Proposition -
+                    </strong>AI/ML driven real-time Demand
+                    Planning and
+                    Replenishment - maximizing profitability.<br>
+                    <strong>Features - </strong>System predicts how much the manufacturer should produce with the
+                    help of the historic sales data. It predicts future orders and also predicts
+                    sales for different distributors and tracks their performances.<br>
+                    <strong>Business Benefits - </strong>The solution links demand forecasting to inventory levels 
+                    and supply chain to avoid overstocking and understocking thereby optimising cost and revenue.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="page-footer font-small footer-img" style="background-image: url(static/images/footer-building.svg);">
+        <div class="container">
+            <div class="row text-center d-flex justify-content-center pt-4 mb-2">
+                <div class="col-md-2 mb-2">
+                    <h6>
+                        <a style="text-decoration: none;" class="footer-link" href="/about">About</a>
+                    </h6>
+                </div>
+                <div class="col-md-2 mb-2">
+                    <h6>
+                        <a style="text-decoration: none;" class="footer-link" href="/deepoptics">Services</a>
+                    </h6>
+                </div>
+                <div class="col-md-2 mb-2">
+                    <h6>
+                        <a style="text-decoration: none;" class="footer-link" href="/blogs">News</a>
+                    </h6>
+                </div>
+                <div class="col-md-2 mb-2">
+                    <h6>
+                        <a style="text-decoration: none;" class="footer-link" href="/products">Solution</a>
+                    </h6>
+                </div>
+                <div class="col-md-2 mb-2">
+                    <h6>
+                        <a style="text-decoration: none;" class="footer-link" href="/contactus">Contact</a>
+                    </h6>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+                    <div class="col-md-2 mb-2">
+                        <h6>
+                            <a style="text-decoration: none;" class="footer-item" href="/privacy">Privacy
+                                Policy</a>
+                        </h6>
+                    </div>
+                    <div class="col-md-3 mb-2">
+                        <h6>
+                            <a style="text-decoration: none;" class="footer-item" href="/termsncondition">Terms &
+                                Conditions</a>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center d-flex justify-content-center pt-4 mb-3">
+                <div class="col-md-12 mb-3">
+                    <h5 class="help-para">We're here to help you</h5>
+                    <!-- {% with messages=get_flashed_messages() %}
+                    {% if messages %}
+                    {% for message in messages %}
+                    <div class="alert alert-success alert-dismissable" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="close">
+                            <span aria-hidden="true">x</span>
+                        </button>
+                        {{message}}
+                    </div>
+                    {% endfor %}
+                    {% endif %}
+                    {% endwith %} -->
+                    <form method="POST" action="/consult">
+                        <input class="footer-input-mail" style=" width: 250px;" type="email" name="consult" id=email placeholder="E-mail"
+                            required>
+                        <input class="submit-value" type="submit" value="Get free consultation">
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-copyright text-center p-4" style="background-color: #34B8C7;">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="mb-6 flex-center">
+                        <a target="_blank"
+                            href="https://www.facebook.com/pages/category/Science--Technology---Engineering/CogniTensor-108257770009160/"
+                            class="fb-ic" style="text-decoration: none; color: black;">
+                            <i class="fab fa-facebook-f fa-lg white-text mr-4"> </i>
+                        </a>
+                        <a target="_blank" href="https://www.instagram.com/cognitensortechnology/" class="ins-ic"
+                            style="text-decoration: none; color: black;">
+                            <i class="fab fa-instagram fa-lg white-text mr-4"> </i>
+                        </a>
+                        <a target="_blank" href="https://www.linkedin.com/company/cognitensor" class="li-ic"
+                            style="text-decoration: none; color: black;">
+                            <i class="fab fa-linkedin-in fa-lg white-text mr-4"> </i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <p class="footer-text">© 2021 CogniTensor Technology Pvt. Ltd.</p>
+        </div>
+    </footer>
+
+    <script>
+        var wow = new WOW({
+            boxClass: 'wow',
+            animateClass: 'animated',
+            offset: 0,
+            mobile: true,
+            live: true,
+            callback: function (box) {},
+            scrollContainer: null,
+            resetAnimation: true,
+        })
+        wow.init();
+    
+    function myyFunn(){
+        alert("Request Sent Sucessfully")
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </script>
+
+
+</body>
+
+</html>

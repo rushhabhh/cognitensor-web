@@ -1,0 +1,97 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(88.89deg, #FFFFFF 1.78%, #FCFCFC 1.79%, #F4FDFF 99.89%);
+}
+
+.company-logo-form {
+    height: 2.9282576866764276vw;
+    margin-left: 4%;
+    margin-top: 2%;
+}
+
+.role-responsibility {
+    margin-top: 40px;
+}
+
+.role-box {
+    background-color:  #fffafa;
+    padding: 60px 40px 60px 40px;
+}
+
+.head-6 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.rnr-para {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.data-entry {
+    padding: 3% 5%;
+}
+
+input[type=text], input[type=email], input[type=tel], input[type=number], select {
+    width: 50%;
+    padding: 3px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-star {
+    position: relative;
+    height: 1.1vw;
+    margin-left: 6px;
+    bottom: 3px;
+}
+
+.profile-submit {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #454545;
+    letter-spacing: 0.8px;
+}
+
+.attach-resume {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    color: #454545;
+    letter-spacing: 0.8px;
+}
+
+input[type=submit] {
+    background-color: #075678;
+    position: relative;
+    border: none;
+    color: #ffffff;
+    padding: 10px 35px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    top: 25px;
+    left: 20%;
+    transition: all 0.5s;
+}
+
+input[type=submit]:hover {
+    transform: scale(1.1);
+    background-color: #bbffff;
+    color: #075678;
+    border: 1px solid #075678;
+}
+
+@media only screen and (max-width:600px) {
+    .company-logo-form {
+        height: 40px;
+        padding: 8px;
+    }
+}

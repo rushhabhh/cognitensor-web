@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="static/css/styles2.css">
+
+     <!-- FontAwesome CDN -->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+     integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <!-- Favicon -->
+    <link rel="icon" href="static/images/tab-icon.png" type="image/png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Animated CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chivo&family=Libre+Franklin:wght@600&family=Mulish:wght@600;700&family=Open+Sans:wght@600&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <title>Blogs</title>
+</head>
+
+<body>
+
+    <!-- WoW JS Animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+
+    <!-- Bootstrap JS  -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+
+    <!-- Product Title -->
+    <section id="product-title">
+        <div class="container-fluid">
+            {% with messages=get_flashed_messages() %}
+            {% if messages %}
+            {% for message in messages %}
+            <div class="alert alert-success alert-dismissable" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="close">
+                    <span aria-hidden="true">x</span>
+                </button>
+                 {{message}}
+             </div>
+                {% endfor %}
+                {% endif %}
+                {% endwith %}
+            <nav class="wow fadeInDown navbar navbar-expand-lg navbar-light stroke">
+                <a href="/" class="navbar-brand"><img class="company-logo" src="static/images/company-logo.svg"
+                        alt="CogniTensor Logo"></a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a href="/about" class="nav-link underline-effect">About</a></li>
+                        <li class="nav-item"><a href="/deepoptics" class="nav-link underline-effect">Deep Optics</a></li>
+                        <li class="nav-item"><a href="/products" class="nav-link underline-effect">Products</a></li>
+                        <li class="nav-item"><a href="/blogs" class="nav-link underline-effect">Blogs</a></li>
+                        <li class="nav-item"><a href="/hiring" class="nav-link underline-effect">Hiring</a></li>
+                        <li class="nav-item"><a href="/contactus" class="nav-link underline-effect">Contact Us</a></li>
+                        <li class="nav-item"><a href="https://console.cognitensor.com/login" class="nav-link"><button
+                                    type="button" class="login-btn">Login</button></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <section id="news-landing">
+        <img class="blogs-dot" src="static/images/left-dots.svg" alt="">
+        <div class="row container-fluid">
+            <div class="col-lg-6 col-md-6">
+                <div class="news-earth">
+                    <h1 class="wow bounceIn blogs-head" data-wow-delay="1s">In News</h1>
+                    <img class="wow rotateIn earth-img" data-wow-delay="1s" src="static/images/blogs-images/earth.svg"
+                        alt="Earth Image">
+                </div>
+                <p class="wow bounceIn blogs-para" data-wow-delay="1s">Stay updated with the latest at CogniTensor</p>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <img class="wow zoomIn blogs-landing" src="static/images/blogs-images/blogs-landing.svg"
+                    alt="Blog Landing Image">
+            </div>
+        </div>
+    </section>
+
+    <section id="articles">
+        <div class="container-fluid1">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="col-12 mt-3">
+                        <div class="wow fadeInUp card height-resp">
+                            <div class="card-horizontal">
+                                <img class="articleimg-circle" src="static/images/blogs-images/news1.svg" alt="News 1">
+                                <div class="card-body">
+                                    <p class="card-text">Why Artificial Intelligence (AI) solutions seem like Tech Magic
+                                    </p>
+                                    <p class="card-text clicktoread"><a target="_blank"
+                                            href="https://cio.economictimes.indiatimes.com/news/next-gen-technologies/why-artificial-intelligence-ai-solutions-seem-like-tech-magic/75293911">Click
+                                            to Read More &#62;&#62;</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="col-12 mt-3">
+                        <div class="wow fadeInUp card height-resp">
+                            <div class="card-horizontal">
+                                <img class="articleimg-circle" src="static/images/blogs-images/news2.svg" alt="News 2">
+                                <div class="card-body">
+                                    <p class="card-text">Covid-19 Impact: How to Successfully manage startup in
+                                        times of uncertainity</p>
+                                    <p class="card-text clicktoread"><a target="_blank"
+                                            href="https://www.linkedin.com/pulse/covid-19-impact-how-successfully-manage-startup-times-ashish-airon/?articleId=6646988272906137601#comments-6646988272906137601&trk=public_profile_article_view">
+                                            Click to Read
+                                            More &#62;&#62;</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="col-12 mt-3">
+                        <div class="wow fadeInUp card height-resp">
+                            <div class="card-horizontal">
+                                <img class="articleimg-circle" src="static/images/blogs-images/news3.svg" alt="">
+                                <div class="card-body">
+                                    <p class="card-text">How AI & ML are Transforming companies by disrupting
+                                        organisational HR</p>
+                                    <p class="card-text clicktoread"><a target="_blank"
+                                            href="https://cio.economictimes.indiatimes.com/news/next-gen-technologies/how-ai-and-ml-are-transforming-companies-by-disrupting-organisational-hr/74604369">Click
+                                            to Read More &#62;&#62;</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="col-12 mt-3">
+                        <div class="wow fadeInUp card height-resp">
+                            <div class="card-horizontal">
+                                <img class="articleimg-box" src="static/images/blogs-images/news4.svg" alt="">
+                                <div class="card-body">
+                                    <p class="card-text">CogniTensor on predicting The Future for Supply Chain,
+                                        Procurement with AI </p>
+                                    <p class="card-text clicktoread"><a target="_blank" href="https://inc42.com/startups/cognitensor-on-predicting-the-future-for-
+                                            \supply-chain-procurement-with-ai/">Click to Read More &#62;&#62;</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="col-12 mt-3">
+                        <div class="wow fadeInUp card height-resp">
+                            <div class="card-horizontal">
+                                <img class="articleimg-circle" src="static/images/blogs-images/news5.svg" alt="">
+                                <div class="card-body">
+                                    <p class="card-text">Meet the Delhi Boy who failed at DU, made it to Oxford, and
+                                        then setup a profitable AI startup</p>
+                                    <p class="card-text clicktoread"><a target="_blank"
+                                            href="https://yourstory.com/2020/01/noida-startup-cognitensor-entrepreneur-ashish-airon">Click
+                                            to Read More &#62;&#62;</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="col-12 mt-3">
+                        <div class="wow fadeInUp card height-resp">
+                            <div class="card-horizontal">
+                                <img class="articleimg-circle" src="static/images/blogs-images/news6.svg" alt="">
+                                <div class="card-body">
+                                    <p class="card-text">Ashish Airon & Pravin Mathur were invited as industry experts
+                                        at NMIMS to talk about Data Science</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="col-12 mt-3">
+                        <div class="wow fadeInUp card height-resp">
+                            <div class="card-horizontal">
+                                <img class="articleimg-box forbes-img" src="static/images/blogs-images/news7.svg" alt="">
+                                <div class="card-body">
+                                    <p class="card-text forbes-text">Ashish Airon, Founder, CogniTensor Technology selected for 30 Under 30 2020 - Forbes Asia.</p>
+                                    <p class="card-text forbes-text clicktoread"><a
+                                            href="https://www.forbes.com/30-under-30/2020/asia/enterprise-technology/#3ed3bcf33ad7">
+                                            Click to Read More &#62;&#62;</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="col-12 mt-3">
+                        <div class="wow fadeInUp card height-resp">
+                            <div class="card-horizontal">
+                                <img class="articleimg-circle" src="static/images/blogs-images/news8.svg" alt="">
+                                <div class="card-body">
+                                    <p class="card-text">Our Data Visualization Software CogniViz is now featured on
+                                        Capterra by Garner Digital</p>
+                                    <p class="card-text clicktoread"><a target="_blank"
+                                            href="https://www.capterra.com/p/198949/CogniViz/">Click to Read More
+                                            &#62;&#62;
+                                        </a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="col-12 mt-3">
+                        <div class="wow fadeInUp card card-aisession height-resp">
+                            <div class="card-horizontal">
+                                <img class="articleimg-circle article-resp" src="static/images/blogs-images/news9.svg"
+                                    alt="">
+                                <div class="card-body">
+                                    <p class="card-text">AI sessions by our Founder Ashish Airon (mentor of Niti Aayog)
+                                        at Birla Vidya Niketan</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="col-12 mt-3">
+                        <div class="wow fadeInUp card height-resp">
+                            <div class="card-horizontal">
+                                <img class="articleimg-box" src="static/images/blogs-images/news10.svg" alt="">
+                                <div class="card-body">
+                                    <p class="card-text">AI/ML Trends: Six <br> Strategic Shift <br> Enterprises will
+                                        make <br> in 2020</p>
+                                    <p class="card-text clicktoread"><a target="_blank"
+                                            href="https://cio.economictimes.indiatimes.com/news/strategy-and-management/ai/ml-trends-six-strategic-shift-enterprises-will-make-in-2020/73922013">Click
+                                            to Read More &#62;&#62;</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="page-footer font-small footer-img" style="background-image: url(static/images/footer-building.svg);">
+        <div class="container">
+            <div class="row text-center d-flex justify-content-center pt-4 mb-2">
+                <div class="col-md-2 mb-2">
+                    <h6>
+                        <a style="text-decoration: none;" class="footer-link" href="/about">About</a>
+                    </h6>
+                </div>
+                <div class="col-md-2 mb-2">
+                    <h6>
+                        <a style="text-decoration: none;" class="footer-link" href="/deepoptics">Services</a>
+                    </h6>
+                </div>
+                <div class="col-md-2 mb-2">
+                    <h6>
+                        <a style="text-decoration: none;" class="footer-link" href="/blogs">News</a>
+                    </h6>
+                </div>
+                <div class="col-md-2 mb-2">
+                    <h6>
+                        <a style="text-decoration: none;" class="footer-link" href="/products">Solution</a>
+                    </h6>
+                </div>
+                <div class="col-md-2 mb-2">
+                    <h6>
+                        <a style="text-decoration: none;" class="footer-link" href="/contactus">Contact</a>
+                    </h6>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+                    <div class="col-md-2 mb-2">
+                        <h6>
+                            <a style="text-decoration: none;" class="footer-item" href="/privacy">Privacy
+                                Policy</a>
+                        </h6>
+                    </div>
+                    <div class="col-md-3 mb-2">
+                        <h6>
+                            <a style="text-decoration: none;" class="footer-item" href="/termsncondition">Terms &
+                                Conditions</a>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center d-flex justify-content-center pt-4 mb-3">
+                <div class="col-md-12 mb-3">
+                    <h5 class="help-para">We're here to help you</h5>
+                    <!-- {% with messages=get_flashed_messages() %}
+                    {% if messages %}
+                    {% for message in messages %}
+                    <div class="alert alert-success alert-dismissable" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="close">
+                            <span aria-hidden="true">x</span>
+                        </button>
+                        {{message}}
+                    </div>
+                    {% endfor %}
+                    {% endif %}
+                    {% endwith %} -->
+                    <form method="POST" action="/consult">
+                        <input class="footer-input-mail" style=" width: 250px;" type="email" name="consult" id=email placeholder="E-mail"
+                            required>
+                        <input class="submit-value" type="submit" value="Get free consultation">
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-copyright text-center p-4" style="background-color: #34B8C7;">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="mb-6 flex-center">
+                        <a target="_blank"
+                            href="https://www.facebook.com/pages/category/Science--Technology---Engineering/CogniTensor-108257770009160/"
+                            class="fb-ic" style="text-decoration: none; color: black;">
+                            <i class="fab fa-facebook-f fa-lg white-text mr-4"> </i>
+                        </a>
+                        <a target="_blank" href="https://www.instagram.com/cognitensortechnology/" class="ins-ic"
+                            style="text-decoration: none; color: black;">
+                            <i class="fab fa-instagram fa-lg white-text mr-4"> </i>
+                        </a>
+                        <a target="_blank" href="https://www.linkedin.com/company/cognitensor" class="li-ic"
+                            style="text-decoration: none; color: black;">
+                            <i class="fab fa-linkedin-in fa-lg white-text mr-4"> </i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <p class="footer-text">© 2021 CogniTensor Technology Pvt. Ltd.</p>
+        </div>
+    </footer>
+
+
+    <script>
+        var wow = new WOW({
+            boxClass: 'wow',
+            animateClass: 'animated',
+            offset: 0,
+            mobile: true,
+            live: true,
+            callback: function (box) {},
+            scrollContainer: null,
+            resetAnimation: true,
+        })
+        wow.init();
+    
+    function myyFunn(){
+        alert("Request Sent Sucessfully")
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </script>
+
+</body>
+
+</html>

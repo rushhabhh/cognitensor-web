@@ -1,0 +1,745 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(88.89deg, #FFFFFF 1.78%, #FCFCFC 1.79%, #F4FDFF 99.89%);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container-fluid {
+    padding: 2% 4% !important;
+}
+
+.company-logo {
+    height: 2.9282576866764276vw
+}
+
+.navbar {
+    padding: 0 0 4.5rem;
+}
+
+.navbar-toggler {
+    border: none !important;
+}
+
+.nav-item {
+    padding: 0 13px;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    font-family: 'Mulish', sans-serif;
+    color: #000 !important;
+    letter-spacing: 0.5px;
+}
+
+nav ul li .underline-effect,
+nav ul li .underline-effect:after,
+nav ul li .underline-effect:before {
+    transition: all .5s;
+}
+
+.nav-link:hover {
+    color: #075678 !important;
+}
+
+nav.stroke ul li .underline-effect {
+    position: relative;
+}
+
+nav.stroke ul li .underline-effect:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #075678;
+    height: 3px;
+}
+
+nav.stroke ul li .underline-effect:hover:after {
+    width: 100%;
+}
+
+.login-btn {
+    font-family: 'Chivo', sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    position: relative;
+    bottom: 4px;
+    background: #075678;
+    border: none;
+    color: #FFFFFF;
+    padding: 3px 14px;
+    border-radius: 3.5px;
+    transition: all 0.5s;
+}
+
+.login-btn:hover {
+    color: #075678;
+    background-color: #bbffff;
+}
+
+/* Blogs CSS start */
+
+#news-landing {
+    margin-top: 30px;
+    position: relative;
+    padding: 2%;
+    background-color: #003951;
+}
+
+.news-earth {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    bottom: 40px;
+}
+
+.earth-img {
+    height: 13vw;
+    position: relative;
+    margin-left: 2.5%;
+}
+
+.blogs-dot {
+    height: 6vw;
+    position: relative;
+    right: 2.1%;
+    margin-top: 75px;
+}
+
+.blogs-head {
+    position: relative;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 3.6rem;
+}
+
+.blogs-para {
+    position: relative;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.7rem;
+    letter-spacing: 0.7px;
+    bottom: 25px;
+}
+
+.blogs-landing {
+    height: 40vw;
+    position: absolute;
+    left: 16%;
+    bottom: -30%;
+}
+
+#articles {
+    padding: 0 3%;
+}
+
+.container-fluid1 {
+    padding: 2% 5%;
+}
+
+.card-horizontal {
+    display: flex;
+}
+
+.card {
+    margin-bottom: 30px;
+    padding: 5% 10%;
+    width: 100%;
+    background-color: #f8fdfe;
+    border: 1px solid #f8fdfe !important;
+    border-radius: 5px;
+    box-shadow: 4px 6px 6px 2px rgba(0, 0, 0, 0.18);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.articleimg-circle {
+    border-radius: 50%;
+    height: 14vw;
+}
+
+.articleimg-box {
+    height: 10.1vw;
+    position: relative !important;
+    top: 27px;
+}
+
+.articleimg-box-yt {
+    height: 13vw;
+    position: relative !important;
+    top: 10px;
+    left: 1%;
+}
+
+.card-text {
+    position: relative;
+    left: 18%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #075678;
+    text-decoration: none;
+    cursor: text;
+}
+
+.text-yt {
+    position: relative;
+    top: 35px;
+    right: 2%;
+}
+
+.card-yt {
+    height: 267px;
+}
+
+.card-aisession {
+    height: 267px;
+}
+
+.clicktoread {
+    font-size: 1.05rem;
+}
+
+/* Form start */
+
+footer {
+    margin-top: 100px;
+    background-image: url(static/images/.footer-building.svg);
+}
+
+.footer-link {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: #000000 !important;
+}
+
+.footer-item {
+    font-family: 'Chivo', sans-serif;
+    font-size: 1.1rem;
+    color: #000000 !important;
+}
+
+.help-para {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+}
+
+.submit-value {
+    background-color: #34B8C7;
+    border: none;
+    color: #ffffff;
+    padding: 3.5px 17px;
+    margin-left: -5px;
+    transition: all 0.5s;
+}
+
+.submit-value:hover {
+    background-color: #f1f1f1;
+    border: none;
+    color: #34B8C7;
+}
+
+.footer-text {
+    position: relative;
+    top: 10px;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+
+
+/* .company-logo-form {
+    height: 2.9282576866764276vw;
+    margin-left: 4%;
+    margin-top: 2%;
+}
+
+.data-entry {
+    padding: 3% 5%;
+}
+
+input[type=text], input[type=email], input[type=tel], input[type=number], select {
+    width: 50%;
+    padding: 3px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.profile-submit {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #454545;
+    letter-spacing: 0.8px;
+}
+
+.attach-resume {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    color: #454545;
+    letter-spacing: 0.8px;
+}
+
+input[type=submit] {
+    background-color: #075678;
+    position: relative;
+    border: none;
+    color: #ffffff;
+    padding: 10px 35px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    top: 25px;
+    left: 20%;
+    transition: all 0.5s;
+}
+
+input[type=submit]:hover {
+    transform: scale(1.1);
+    background-color: #bbffff;
+    color: #075678;
+    border: 1px solid #075678;
+} */
+
+/* Form End */
+
+/* Footer start */
+
+/* footer {
+    margin-top: -80px;
+}
+
+.footer-display {
+    position: relative;
+    display: flex;
+    list-style-type: none;
+    top:220px;
+}
+
+.footer-display1 {
+    position: relative;
+    top: 200px;
+}
+
+.footer-link {
+    padding: 0 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.footer-color {
+    background-color: #34B8C7;
+}
+
+.footer-text {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: #ffffff;
+}
+
+.footer-building {
+    width: 100%;
+    position: relative;
+    z-index: -1;
+}
+
+.help-you {
+    position: relative;
+    top:215px;
+}
+
+.footer-item {
+    padding: 0 20px;
+    position: relative;
+    top: 10px;
+    font-family: 'Chivo', sans-serif;
+    font-size: 1rem;
+}
+
+.input-consultation {
+    position: relative;
+    top: 240px;
+}
+
+.footer-input-mail {
+    width: 200px;
+}
+
+.submit-value {
+    background-color: #34B8C7 !important;
+    border: none !important;
+    color: #ffffff !important;
+    padding: 3.5px 13px !important;
+    margin-left: -5px !important;
+    transition: all 0.5s !important;
+}
+
+.submit-value:hover {
+    background-color: #f7f7f7 !important;
+    border: none !important;
+    color: #34B8C7 !important;
+}
+
+.social-media {
+    position: relative;
+    left: 90px;
+    top: 250px;
+    height: 2vw;
+    padding-left: 10px;
+}
+
+.icon-fb {
+    height: 2.3vw;
+} */
+
+/* Footer end */
+
+/* Blogs Responsive Mobile start */
+
+
+@media only screen and (max-width: 600px) {
+    .navbar-nav {
+        margin-top: 25px;
+    }
+
+    .nav-item {
+        text-align: center;
+    }
+
+    .company-logo {
+        height: 40px;
+    }
+
+    .company-logo-form {
+        height: 40px;
+    }
+
+    .blogs-dot {
+        height: 35px;
+        top: -50px;
+    }
+
+    .news-earth {
+        margin-left: 2%;
+    }
+
+    .blogs-head {
+        font-size: 2rem;
+    }
+
+    .earth-img {
+        height: 50px;
+        top: -12px;
+    }
+
+    .blogs-para {
+        top: -30px;
+        margin-left: 2%;
+        font-size: 0.8rem;
+    }
+
+    .blogs-landing {
+        display: none;
+    }
+
+    .card {
+        width: 110%;
+        height: auto;
+        margin-left: -6% !important;
+    }
+
+    .card-yt {
+        padding: 8%;
+    }
+
+    .articleimg-circle {
+        height: 100px;
+        margin-top: 10px;
+    }
+
+    .articleimg-box {
+        height: 60px;
+    }
+
+    
+
+    .card-text {
+        font-size: 0.7rem;
+    }
+    .forbes-text {
+        margin-left: 25px;
+
+    }
+    .forbes-img { 
+       margin-left: 12px;
+       height: 17vw;
+    }
+
+    
+
+    .clicktoread {
+        font-size: 0.6rem;
+    }
+
+    .profile-submit {
+        font-size: 1.7rem;
+    }
+
+    .data-entry {
+        margin-top: 20px;
+    }
+    .footer {
+        margin-top: -20px;
+
+    }
+   .footer-link {
+       font-size: 17px;
+
+
+   }
+   .footer-item {
+       font-size: 14px;
+
+   }
+   .submit-value {
+       margin-top: 10px;
+   }
+}
+
+/* Blogs Responsive Mobile end */
+
+/* Blogs Responsive Tablet start */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) 
+and (-webkit-min-device-pixel-ratio: 2) {
+
+    .company-logo {
+        height: 48px;
+    }
+
+    .company-logo-form {
+        height: 48px;
+    }
+
+    .navbar-nav {
+        margin-top: 40px;
+    }
+
+    .nav-item {
+        text-align: center;
+    }
+
+    .blogs-head {
+        font-size: 2.9rem;
+    }
+
+    .blogs-para {
+        font-size: 1.4rem;
+    }
+
+    .blogs-landing {
+        bottom: 3px;
+    }
+
+    .articleimg-circle {
+        height: 170px;
+    }
+
+    .article-resp {
+        margin-top: 10px;
+    }
+
+    .articleimg-box {
+        height: 115px;
+    }
+
+    .profile-submit {
+        font-size: 1.7rem;
+    }
+
+    .data-entry {
+        margin-top: 20px;
+    }
+
+    footer {
+        margin-top: -150px;
+    }
+
+    .footer-display {
+        margin-left: -10px;
+    }
+
+    .footer-link {
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+
+    .help-you {
+        font-size: 1rem;
+        margin-top: 15px;
+    }
+
+    .submit-value {
+        margin-top: 10px;
+        margin-left: 1px !important;
+    }
+
+    .footer-item {
+        font-size: 0.8rem;
+        top: -50px;
+    }
+
+    .social-media {
+        top: 140px;
+        left: 37px;
+    }
+}
+
+/* Blogs Responsive Tablet end */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape)  
+and (-webkit-min-device-pixel-ratio: 2) {
+
+    .nav-item {
+        padding: 0 8px;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+        font-family: 'Mulish', sans-serif;
+        color: #000000 !important;
+    }
+
+    .height-resp {
+        height: 250px;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+
+    .articleimg-circle {
+        margin-top: 25px;
+    }
+
+    .articleimg-box {
+        margin-top: 5px;
+    }
+
+    .clicktoread {
+        font-size: 0.7rem;
+    }
+
+    .footer-link {
+        margin-top: 40px;
+        font-size: 1rem;
+        padding: 16px;
+    }
+
+    .footer-item {
+        font-size: 1rem;
+        top: -10px;
+    }
+
+    .footer-input-mail {
+        width: 90%;
+    }
+
+    .submit-value {
+        margin-top: 10px;
+        margin-left: 1px !important;
+    }
+
+    .help-you {
+        font-size: 1.3rem;
+        margin-top: 55px;
+    }
+
+    .social-media {
+        top: 190px;
+        left: 65px;
+    }
+
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) 
+and (-webkit-min-device-pixel-ratio: 2) {
+
+    .nav-item {
+        padding: 0 8px;
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+        font-family: 'Mulish', sans-serif;
+        color: #000000 !important;
+    }
+
+    .card-text {
+        font-size: 0.8rem;
+    }
+
+    .clicktoread {
+        font-size: 0.62rem;
+    }
+
+    .articleimg-circle {
+        height: 130px;
+    }
+
+    .articleimg-box {
+        height: 100px;
+    }
+
+    .data-entry {
+        margin-top: 30px;
+    }
+
+    .profile-submit {
+        font-size: 2.4rem;
+    }
+    .footer-link {
+        font-size: 1.2rem;
+        padding: 15px;
+    }
+
+    .help-you {
+        font-size: 1.4rem;
+        padding-top: 4px;
+    }
+
+    .footer-item {
+        font-size: 1.2rem;
+    }
+
+    .footer-input-mail {
+        width: 90%;
+    }
+
+    .social-media {
+        top: 180px;
+    }
+}

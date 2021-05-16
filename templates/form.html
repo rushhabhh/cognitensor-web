@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="static/css/styles3.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="static/images/tab-icon.png" type="image/png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chivo&family=Libre+Franklin:wght@600&family=Mulish:wght@600;700&family=Open+Sans:wght@600&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <title>Hiring Form</title>
+</head>
+
+<body>
+
+    <script src="js/script.js"></script>
+
+    <!-- Bootstrap JS  -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+
+    <a href="/"><img class="company-logo-form" src="static/images/company-logo.svg" alt=""></a>
+
+    <div class="role-responsibility container">
+        <div class="role-box">
+            <h6 class="head-6">Roles & Responsibilities:-</h6>
+            <p class="rnr-para">We are looking for a Team Lead- Data Scientist to lead a technical team
+                and help us gain useful insight out of raw data and to help improve our
+                products and business decisions by making the most out of our data.
+            </p>
+            <ul>
+                <li class="rnr-para">Team Lead Data Scientist responsibilities includes</li>
+                <li class="rnr-para">Managing the data science team</li>
+                <li class="rnr-para">Planning projects and bulding analytics models. </li>
+                <li class="rnr-para">Client Interaction</li>
+            </ul>
+            <h6 class="head-6">Skills Description:-<br>Must Have</h6>
+            <ul>
+                <!-- <li class="rnr-para">Must Have</li> -->
+                <li class="rnr-para">Algorithm Trading</li>
+                <li class="rnr-para">Quantitative Analysis</li>
+                <li class="rnr-para">Financial Mathematics</li>
+                <li class="rnr-para">Python</li>
+                <li class="rnr-para">Statistical and data mining techniques data architectures </li>
+            </ul>
+            <h6 class="head-6">Responsibilities</h6>
+            <ul>
+                <li class="rnr-para">Researching and developing quantitative trading strategies across various asset classes (FX, Stocks,
+                    Commodities, Rates)</li>
+                <li class="rnr-para">Improve the infrastructure and automation of the desk across both the Brokerage and Portfolio
+                    Management businesses</li>
+                <li class="rnr-para">Automate flows for financial time series data storage and build Machine Learning models to extract
+                    edge from the market</li>
+                <li class="rnr-para">Build Machine Learning models for the analysis of proprietary data and optimisation of trading
+                    operations</li>
+                <li class="rnr-para">Development of asset allocation models and front office tools using Python and Tensorflow</li>
+            </ul>
+            <h6 class="head-6">Minimum Qualification:-</h6>
+            <ul>
+                <li class="rnr-para">Masters degree (or at a minimum relevant certifications) from a good university (Computational
+                    Finance, Data Science & Machine Learning, Financial Mathematics, Software Engineering, or Maths are
+                    preferred)</li>
+                <li class="rnr-para">Bachelor degree from a good university (Maths, Software Engineering, Mechanical or Chemical
+                    Engineering are preferred)</li>
+                <li class="rnr-para">Software Engineering skills (of ideal candidate): Python, Tensorflow, Q/Kdb+, Working with APIs (FIX
+                    protocol is a plus), AWS/GCP/Azure, Docker, Serverless applications, Github</li>
+                <li class="rnr-para">Good Communication Skills</li>
+                <li class="rnr-para">Ability to communicate ideas clearly both in writing and verbally</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="data-entry">
+        <!-- {% with messages=get_flashed_messages() %}
+        {% if messages %}
+        {% for message in messages %}
+        <div class="alert alert-success alert-dismissable" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="close">
+                <span aria-hidden="true">x</span>
+            </button>
+             {{message}}
+         </div>
+            {% endfor %}
+            {% endif %}
+            {% endwith %} -->
+        <form method="POST" action="/hireopening" enctype="multipart/form-data">
+            <h2 class="profile-submit">Submit Your Profile</h2><br>
+            <label for="name">Name</label><img class="form-star" src="static/images/hiring-images/form-star.png" alt=""><br>
+            <input type="text" id="name" name="fullname" required><br>
+            <label for="email">Email</label><img class="form-star" src="static/images/hiring-images/form-star.png" alt=""><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="phoneno">Phone No.</label><img class="form-star" src="static/images/hiring-images/form-star.png" alt=""><br>
+            <input type="tel" id="tel" name="tel" pattern="[6789][0-9]{9}" title="Make Sure '''0''' Must Be Avoided " required><br>
+            <label for="location">Location</label><img class="form-star" src="static/images/hiring-images/form-star.png" alt=""><br>
+            <input type="text" id="location" name="location" required><br>
+            <label for="experience">Experience</label><img class="form-star" src="static/images/hiring-images/form-star.png" alt=""><br>
+            <input type="number" min="0" id="experience" name="experience" required><br>
+            <label for="CTC">Expected CTC</label><img class="form-star" src="static/images/hiring-images/form-star.png" alt=""><br>
+            <input type="number" min="0" id="number" name="number" required><br><br>
+            <h3 class="attach-resume">Attach Resume <span>(.pdf)</span></h3>
+            <label type="exampleFormControlFile1" required></label><img class="form-star" src="static/images/hiring-images/form-star.png" alt="">
+            <input type="file" name="inputfile" class="form-control-file" id="eampleFormControlFile1" required>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+<script>
+    // function myFun(){
+    //     alert("0 must be Avoided in Contact Field" + "                                   "+ 
+    //     "Resume Should be Uploaded in pdf format")
+    // }
+    
+</script>
+
+</body>
+
+</html>

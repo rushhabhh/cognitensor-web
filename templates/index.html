@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="static/css/styles.css">
+    
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <!-- Tab Icon -->
+    <link rel="icon" href="static/images/tab-icon.png" type="image/png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Animated CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Chivo&family=Libre+Franklin:wght@600&family=Mulish:wght@600;700&
+        family=Open+Sans:wght@600&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>CogniTensor | an A.I Company</title>
+</head>
+
+<body>
+
+    <!-- Javascript File -->
+    <script src="./js/script.js"></script>
+
+    <!-- WoW JS Animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+
+    <!-- Bootstrap JS  -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+
+    <!-- Product Title -->
+    <section id="product-title">
+        <div class="container-fluid">
+            {% with messages=get_flashed_messages() %}
+            {% if messages %}
+            {% for message in messages %}
+            <div class="alert alert-success alert-dismissable" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="close">
+                    <span aria-hidden="true">x</span>
+                </button>
+                 {{message}}
+             </div>
+                {% endfor %}
+                {% endif %}
+                {% endwith %}
+            <nav class="wow fadeInDown navbar navbar-expand-lg navbar-light stroke">
+                <a href="/" class="navbar-brand"><img class="company-logo" src="static/images/company-logo.svg"
+                        alt="CogniTensor Logo"></a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a href="/about" class="nav-link underline-effect">About</a></li>
+                        <li class="nav-item"><a href="/deepoptics" class="nav-link underline-effect">Deep Optics</a></li>
+                        <li class="nav-item"><a href="/products" class="nav-link underline-effect">Products</a></li>
+                        <li class="nav-item"><a href="/blogs" class="nav-link underline-effect">Blogs</a></li>
+                        <li class="nav-item"><a href="/hiring" class="nav-link underline-effect">Hiring</a></li>
+                        <li class="nav-item"><a href="/contactus" class="nav-link underline-effect">Contact Us</a></li>
+                        <li class="nav-item"><a href="https://console.cognitensor.com/login" class="nav-link"><button
+                                    type="button" class="login-btn">Login</button></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="row container-fluid">
+            <div class="col-lg-6 col-md-6">
+                <p class="landing-para wow fadeInUp" data-wow-delay="1s">Bridging the gap <br> between IT & AI by
+                    transforming your <br> <span class="wod">"World of Data"</span> into a
+                    <span class="woi">"World of Intelligence"</span></p>
+                <button type="button" class="btn-title wow fadeInUp" data-wow-delay="1.5s" data-toggle="modal"
+                    data-target="#exampleModal"><span>Request a
+                        Demo</span></button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <img class="company-logo" src="static/images/company-logo.svg" alt="">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- {% with messages=get_flashed_messages() %}
+                                {% if messages %}
+                                {% for message in messages %}
+                                <div class="alert alert-success alert-dismissable" role="alert">
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="close">
+                                        <span aria-hidden="true">x</span>
+                                    </button>
+                                     {{message}}
+                                 </div>
+                                    {% endfor %}
+                                    {% endif %}
+                                    {% endwith %} -->
+                                <form method="POST">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="name" placeholder="Name" name="name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="cname" name="cname"
+                                            placeholder="Company Name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="email" placeholder="E-mail" name="email">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="tel" class="form-control" id="contactno" name="contactno"
+                                            placeholder="Contact No." title="Make Sure Your Contact Number Not Exceeds 10 Digit" pattern="[6789][0-9]{9}" required>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <!-- <button type="button" class="btn btn-primary">Submit</button> -->
+                                        <a href=""></a><button type="submit" class="btn btn-primary" value="submit">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <img class="main-landing" src="static/images/landingpage-images/main-landing.svg" alt="Landing Image">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="boost-algo">
+        <h5 class="algo-head-5 text-center">How our boosting algorithm works?</h5>
+        <h2 class="wow fadeInUp algo-head-2 text-center">Four Step To Boost Your Business</h2>
+
+        <div class="card-layout">
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="wow fadeInUp card card-resp" data-wow-delay="1s"
+                        style="width: 16rem; height: 32rem; box-shadow: 0px 4px 15px 2px #d3d3d3; border-radius: 18px;">
+                        <div class="num-style" style="background-color: #049BA4;">
+                            <h3 class="card-img-top">01</h3>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="color: #049BA4;">Accumulation</h5>
+                            <img class="accumulation-img" src="static/images/landingpage-images/accumulation.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="wow fadeInUp card card-resp" data-wow-delay="1.2s"
+                        style="width: 16rem; height: 32rem; box-shadow: 0px 4px 15px 2px #d3d3d3; border-radius: 18px; ">
+                        <div class="num-style" style="background-color: #9d0191;">
+                            <h3 class="card-img-top">02</h3>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="color: #9d0191;">Analyzation</h5>
+                            <img class="analyzation-img" src="static/images/landingpage-images/analyzation.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="wow fadeInUp card card-resp" data-wow-delay="1.3s"
+                        style="width: 16rem; height: 32rem; box-shadow: 0px 4px 15px 2px #d3d3d3; border-radius: 18px;">
+                        <div class="num-style" style="background-color: #fd3a69;">
+                            <h3 class="card-img-top">03</h3>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="color: #fd3a69;">Prediction</h5>
+                            <img class="prediction-img" src="static/images/landingpage-images/prediction.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="wow fadeInUp card card-resp" data-wow-delay="1.4s"
+                        style="width: 16rem; height: 32rem; box-shadow: 0px 4px 15px 2px #d3d3d3; border-radius: 18px;">
+                        <div class="num-style" style="background-color: #fecd1a;">
+                            <h3 class="card-img-top">04</h3>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center" style="color: #fecd1a;">Output</h5>
+                            <img class="output-img" src="static/images/landingpage-images/output.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section id="optics">
+        <img class="landing-dot" src="static/images/landingpage-images/landing-dots.svg" alt="Dot Design">
+        <div class="row container-fluid">
+            <div class="col-lg-6 col-md-6">
+                <img class="optics-landing" src="static/images/landingpage-images/optics-landing.svg"
+                    alt="Deep Optics Landing">
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <h1 class="wow fadeInUp optics-land-head">Deep Optics</h1>
+                <p class="wow fadeInUp optics-land-para" >We help you achieve quantifiable
+                    business solutions via the
+                    exceptional blend of business acumen, big data, and ML.
+                    We integrate outstanding technical proficiency to identify the
+                    company’s ineptitude and recast them into competence.</p>
+                <div class="wow fadeInUp icon-placing">
+                    <img class="dricon" src="static/images/landingpage-images/datarodeo-icon.svg" alt="Data Rodeo Icon">
+                    <img class="mlicon" src="static/images/landingpage-images/mlbench-icon.svg" alt="ML Bench Icon">
+                    <img class="cvicon" src="static/images/landingpage-images/cogniviz-icon.svg" alt="Cogniviz Icon">
+                </div>
+                <a style="text-decoration: none;" class="flexing" href="/deepoptics">
+                    <h3 class="learn-more">Learn More</h3>
+                    <img class="right-arrow" src="static/images/landingpage-images/right-arrow.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="ourproducts">
+
+        <h2 class="wow fadeInUp text-center pland-head">Our Products</h2>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 container-p">
+                <img class="pimg"  src="static/images/landingpage-images/ea.png" alt="">
+                <div class="content-p">
+                    <p class="text-center para-p">Energy and Commodity Price Prediction</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 container-p">
+                <img class="pimg" src="static/images/landingpage-images/pas.png" alt="">
+                <div class="content-p">
+                    <p class="text-center para-p">Payment Analysis System</p>
+                </div>
+            </div>
+            <!-- <div class="col-lg-3 col-md-6 container-p">
+                <img class="wow bounceInDown pimg" data-wow-delay="0.5s" src="static/images/landingpage-images/dfr.png" alt="">
+                <div class="content-p">
+                    <p class="text-center para-p">Demand Forcasting and <br> Replenishment</p>
+                </div>
+            </div> -->
+            <div class="col-lg-3 col-md-6 container-p">
+                <img class="pimg" src="static/images/landingpage-images/pps.png" alt="">
+                <div class="content-p">
+                    <p class="text-center para-p">Procurement Planning <br> System</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 container-p">
+                <img class="pimg" src="static/images/landingpage-images/dfr.png" alt="">
+                <div class="content-p">
+                    <p class="text-center para-p">Demand Forcasting and <br> Replenishment</p>
+                </div>
+            </div>
+        </div>
+        <a href="/deepoptics">
+            <button class="wow fadeInUp btn-1">Learn More <span style='font-size:20px;'>&#8594;</span></button></a>
+
+    </section>
+
+    <section id="partners">
+        <h2 class="partner-head">Our Partners & Investors</h2>
+        <img class="partner-dot" src="static/images/left-dots.svg" alt="">
+        <div id="partners-slider" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner carousel-partners">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-4">
+                            <img class="partner-img" src="static/images/landingpage-images/partner-1.svg" alt="">
+                        </div>
+                        <div class="col-lg-4 col-sm-4">
+                            <img class="partner-img" src="static/images/landingpage-images/partner-2.svg" alt="">
+                        </div>
+                        <div class="col-lg-4 col-sm-4">
+                            <img class="partner-img" src="static/images/landingpage-images/partner-3.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-4">
+                            <img class="partner-img" src="static/images/landingpage-images/partner-3.svg" alt="">
+                        </div>
+                        <div class="col-lg-4 col-sm-4">
+                            <img class="partner-img" src="static/images/landingpage-images/partner-4.svg" alt="">
+                        </div>
+                        <div class="col-lg-4 col-sm-4">
+                            <img class="partner-img" src="static/images/landingpage-images/partner-5.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#partners-slider" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#partners-slider" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </section>
+
+    <footer class="page-footer font-small footer-img" style="background-image: url(static/images/footer-building.svg);">
+        <div class="container">
+            <div class="row text-center d-flex justify-content-center pt-4 mb-2">
+                <div class="col-md-2 mb-2">
+                    <h6>
+                        <a style="text-decoration: none;" class="footer-link" href="/about">About</a>
+                    </h6>
+                </div>
+                <div class="col-md-2 mb-2">
+                    <h6>
+                        <a style="text-decoration: none;" class="footer-link" href="/deepoptics">Services</a>
+                    </h6>
+                </div>
+                <div class="col-md-2 mb-2">
+                    <h6>
+                        <a style="text-decoration: none;" class="footer-link" href="/blogs">News</a>
+                    </h6>
+                </div>
+                <div class="col-md-2 mb-2">
+                    <h6>
+                        <a style="text-decoration: none;" class="footer-link" href="/products">Solution</a>
+                    </h6>
+                </div>
+                <div class="col-md-2 mb-2">
+                    <h6>
+                        <a style="text-decoration: none;" class="footer-link" href="/contactus">Contact</a>
+                    </h6>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+                    <div class="col-md-2 mb-2">
+                        <h6>
+                            <a style="text-decoration: none;" class="footer-item" href="/privacy">Privacy
+                                Policy</a>
+                        </h6>
+                    </div>
+                    <div class="col-md-3 mb-2">
+                        <h6>
+                            <a style="text-decoration: none;" class="footer-item" href="/termsncondition">Terms &
+                                Conditions</a>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center d-flex justify-content-center pt-4 mb-3">
+                <div class="col-md-12 mb-3">
+                    <h5 class="help-para">We're here to help you</h5>
+                    <!-- {% with messages=get_flashed_messages() %}
+                    {% if messages %}
+                    {% for message in messages %}
+                    <div class="alert alert-success alert-dismissable" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="close">
+                            <span aria-hidden="true">x</span>
+                        </button>
+                        {{message}}
+                    </div>
+                    {% endfor %}
+                    {% endif %}
+                    {% endwith %} -->
+                    <form method="POST" action="/consult">
+                        <input class="footer-input-mail" style=" width: 250px;" type="email" name="consult" id=email placeholder="E-mail"
+                            required>
+                        <input class="submit-value" type="submit" value="Get free consultation">
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-copyright text-center p-4" style="background-color: #34B8C7;">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="mb-6 flex-center">
+                        <a target="_blank"
+                            href="https://www.facebook.com/pages/category/Science--Technology---Engineering/CogniTensor-108257770009160/"
+                            class="fb-ic" style="text-decoration: none; color: black;">
+                            <i class="fab fa-facebook-f fa-lg white-text mr-4"> </i>
+                        </a>
+                        <a target="_blank" href="https://www.instagram.com/cognitensortechnology/" class="ins-ic"
+                            style="text-decoration: none; color: black;">
+                            <i class="fab fa-instagram fa-lg white-text mr-4"> </i>
+                        </a>
+                        <a target="_blank" href="https://www.linkedin.com/company/cognitensor" class="li-ic"
+                            style="text-decoration: none; color: black;">
+                            <i class="fab fa-linkedin-in fa-lg white-text mr-4"> </i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <p class="footer-text">© 2021 CogniTensor Technology Pvt. Ltd.</p>
+        </div>
+    </footer>
+
+
+    <script>
+        var wow = new WOW({
+            boxClass: 'wow',
+            animateClass: 'animated',
+            offset: 0,
+            mobile: true,
+            live: true,
+            callback: function (box) {},
+            scrollContainer: null,
+            resetAnimation: true,
+        })
+        wow.init();
+    
+    function myyFunn(){
+        alert("Request Sent Sucessfully")
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </script>
+
+
+</body>
+
+</html>
